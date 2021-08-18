@@ -1,5 +1,5 @@
 class Prueba {
-    constructor(nombre, apellido, edad) {
+    constructor(nombre, apellido, edad, direccion, familia) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
@@ -11,9 +11,9 @@ class Prueba {
     }
 }
 
-this.direccion = prompt('pasame tu direccion');
-this.familia = prompt('cuantas personas son en tu familia');
+let pideDireccion = prompt('pasame tu direccion');
+let pideFamilia = prompt('cuantas personas son en tu familia');
 
-let david = new Prueba('david', 'lee', 34)
+let david = new Prueba('david', 'lee', 34, pideDireccion, pideFamilia)
 
 console.log(david)
